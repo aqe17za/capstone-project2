@@ -10,7 +10,7 @@ import re
 
 from output_scanner import check_output
 
-max_length = 500
+MAX_LENGTH = 500
 
 blocklist = [
 
@@ -38,7 +38,7 @@ blocklist = [
 def check_input(text):
 
 
-    if len(text) > max_length:
+    if len(text) > MAX_LENGTH:
 
         return False, "Input too long (max 500 characters)"
 
